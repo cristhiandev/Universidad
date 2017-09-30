@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuestionario</title>
+
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="fuentes/styles.css">
+    
+</head>
+<body>
+    
+    
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__logo"><span class="header__logo__img"></span></div>
+            <ul class="header__menu">
+                <li class="header__item"><a class="header__enlace" id="botonHomeS"><span class="icon-home"></span><span class="texto">Inicio</span></a></li>
+                <li class="header__item"><a class="header__enlace" href="#"><span class="icon-book-2"></span><span class="texto">Manual</span></a></li>
+                <li class="header__item"><a class="header__enlace" href="#"><span class="icon-users"></span><span class="texto">Integrantes</span></a></li>
+                <li class="header__item"><a class="header__enlace" href="#"><span class="icon-code"></span><span class="texto">Codigo Fuente</span></a></li>
+            </ul> 
+        </nav>
+
+    </header>
+
+    <section class="main">
+
+
+        <aside class="aside">
+            <div class="aside__titulo">
+                OPCIONES DE JUEGO
+            </div>
+            <section class="aside__contenedor">
+                <ul class="aside__menu">    
+                    <li class="aside__item"><a id="botonHomeL" class="aside__enlace">Inicio</a></li>
+                    <li class="aside__item"><a class="aside__enlace" href="">Puntajes</a></li>
+                    <li class="aside__item"><a class="aside__enlace" href="">Preguntas y Respuestas</a></li>
+                </ul>
+            </section>
+        </aside>
+
+        <section class="juego">
+                <div class="juego__titulo">
+                    PLATAFORMA
+                </div>
+
+
+                <div class="juego__contenedor" id="juego__contenedor">
+
+<!-- ********************************* CONTENIDO DEL JUEGO QUE CAMBIARA ********************************* -->
+
+
+                    <!--<div class="juego__plataforma">
+                        <span class="boton__iniciar">INICIAR EL JUEGO</span>
+                    </div>-->
+
+<!--
+                    <div class="intro__contenedor">
+                        <video class="intro__video" width="100%" autoplay>
+                            <source src="vd/IntroFaperokos.mp4" type="video/mp4">
+                        </video>
+                    </div>-->
+
+                    <div class="datos__juego" id="datosJuego">
+                        <h2 class="datos__titulo">Elige el Personaje Que Deseas Usar E Ingresa Un Nombre De Usuario</h2>
+
+                        <div class="datos__contenedor__personaje">
+                            <span class="icon-chevron-left datos__izquierda"></span>
+                            <span class="datos__personaje" id="datosPersonaje"></span>
+                            <span class="icon-chevron-right datos__derecha"></span>
+                        </div>
+                        
+                        <input class="datos__nombre" type="text" name="datosNombre" placeholder="Nombre de Usuario">
+                        <a class="datos__iniciar">INICIAR JUEGO</a>
+                    </div>
+
+
+<!-- ********************************* CONTENIDO DEL JUEGO QUE CAMBIARA ********************************* -->
+
+                </div>
+
+                
+        </section>
+
+    </section>
+
+
+    <footer>
+        
+    </footer>
+
+    <script type="text/javascript" src="js/procesos.js"></script>
+</body>
+</html>
