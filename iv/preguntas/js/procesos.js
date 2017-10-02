@@ -17,6 +17,49 @@ let llenarPrincipal=(elemento)=>{
 };
 
 
+let personajes=["personaje1.png","personaje2.png","personaje3.png","personaje4.png"];
+
+/* VARIABLES DE CONTROL DE CAMBIO DE PERSONAJE */
+let npersonaje=0;
+
+let obtenerPersonajeMouse=(direccion)=>{
+
+        direc=direccion;
+
+        if(direc =="derecha")
+        {
+            if(npersonaje==personajes.length-1)npersonaje=0;
+            else npersonaje++;
+        }
+        else if(direc =="izquierda")
+        {
+            if(npersonaje==0)npersonaje=personajes.length -1;
+            else npersonaje--;
+        }
+
+    return personajes[npersonaje];
+};
+
+
+let obtenerPersonajeTeclado=(e)=>{
+
+        let tecla=e.keyCode;
+
+        if(tecla==39)
+        {
+            if(npersonaje==personajes.length-1)npersonaje=0;
+            else npersonaje++;
+        }
+        else if(tecla==37)
+        {
+            if(npersonaje==0)npersonaje=personajes.length -1;
+            else npersonaje--;
+        }
+
+    return personajes[npersonaje];
+};
+
+
 
     let pantallaInicio=()=>{
         
@@ -102,6 +145,7 @@ let llenarPrincipal=(elemento)=>{
         datosNombre.setAttribute("name","datosNombre");
         datosNombre.setAttribute("Id","datosNombre");
         datosNombre.setAttribute("placeholder","Nombre de Usuario");
+        datosNombre.setAttribute("maxlength",20);
 
         let datosIniciar=document.createElement("a");
         datosIniciar.setAttribute("Id","datosIniciar");
@@ -121,10 +165,58 @@ let llenarPrincipal=(elemento)=>{
 
         llenarPrincipal(datosJuego);
 
+/* CAMBIO DE PERSONAJE */
+        let datosIzquierda2=document.getElementById("datosIzquierda");
+        let datosDerecha2=document.getElementById("datosDerecha");
+        let datosPersonaje2=document.getElementById("datosPersonaje");
+
+        datosIzquierda2.addEventListener("click", ()=>{
+            datosPersonaje2.setAttribute(
+                "style",
+                "background:url(img/personajes/"+
+                obtenerPersonajeMouse("izquierda")+
+                ");background-repeat: no-repeat;background-size: contain;"
+                );
+        } );
+
+        datosDerecha2.addEventListener("click", ()=>{
+            datosPersonaje2.setAttribute(
+                "style",
+                "background:url(img/personajes/"+
+                obtenerPersonajeMouse("derecha")+
+                ");background-repeat: no-repeat;background-size: contain;"
+                );
+        } );
+
+
+        document.querySelector("body").addEventListener("keyup",
+        (e)=>{
+            if(document.getElementById('datosPersonaje'))
+            {
+                datosPersonaje2.setAttribute(
+                "style",
+                "background:url(img/personajes/"+
+                obtenerPersonajeTeclado(e)+
+                ");background-repeat: no-repeat;background-size: contain;"
+                );
+            }
+
+        } 
+        );
+
     };
 
 
-pantallaInicio();
+    let rondaPreguntas=()=>{
+
+        
+
+    };
+
+    
+// seleccionPersonaje();
+
+// pantallaInicio();
 
 /* BOTONES DE INICIO */
 let botonHomeS=document.getElementById("botonHomeS");
