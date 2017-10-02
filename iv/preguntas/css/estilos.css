@@ -391,6 +391,7 @@ background: hsl(16,86%,59%);
     width: 100%;
     height: 100%;
     background-color:#202020;
+  
     color:#fff;
     display: flex;
     flex-direction: column;
@@ -424,14 +425,14 @@ background: hsl(16,86%,59%);
 }
 
 .datos__izquierda, .datos__derecha{
-    color: #E2686D;
+    color: #1abc9c;
     font-size: 3em;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 .datos__derecha:hover, .datos__izquierda:hover{
-    color: #4A9FF9;
+    color: #E2686D;
 }
 
 
@@ -444,7 +445,7 @@ background: hsl(16,86%,59%);
 
 .datos__iniciar{
     width: 50%;
-    background-color:  #E2686D;
+    background-color:  #1abc9c;
     line-height: 3;
     margin-top: 1em;
     text-align: center;
@@ -453,9 +454,74 @@ background: hsl(16,86%,59%);
 }
 
 .datos__iniciar:hover{
-    background-color: #4A9FF9;
+    background-color: #E2686D;
 }
 
+
+.preguntas{
+    width: 100%;
+    height: 100%;
+    background-color: #3D9970;
+    padding: 1.5em 2em;
+}
+
+.preguntas__header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.preguntas__titulo{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.preguntas__marcador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFDC00;
+    padding: 1em;
+    border-radius: 1em;
+    color: #111111;
+}
+
+.preguntas__pregunta{
+    width: 100%;
+    height: 100px;
+    background-color: #85144B;
+    margin: 1em 0;
+    box-shadow: 0 0 0 4px #85144B inset, 0 0 0 5px #fff inset;
+}
+
+.preguntas__icon{
+    width: 20%;
+    height: 100%;
+    font-size: 5em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preguntas__respuestas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.preguntas__respuesta{
+    background-color: #fff;
+    width: 100%;
+    padding: 1em;
+    margin: 0 1em;
+}
 
 .caja{
     background-color: hsl(162,57%,60%);
