@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../ft/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../ft/OpenSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../ft/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../ft/OpenSans-SemiBold.ttf");
+}
+
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');*/
+
+*,html,body,::before,::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+input{
+	box-shadow: none;
+	outline: 0;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.f__light{
+	font-weight: 300;
+}
+
+.f__regular{
+	font-weight: 400;
+}
+
+.f__semi-bold{
+	font-weight: 600;
+}
+
+.f__bold{
+	font-weight: 700;
+}
+
+.f__extra-bold{
+	font-weight: 800;
+}
+
+.f__titulo{
+	font-size: 2em;
+}
+
+.f__subtitulo{
+	font-size: 1em;
+}
+
+.f__cuerpo{
+	font-size: 13px;
+}
+
+.contenedor{
+	width: 100%;
+	max-width: 1024px;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.header{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+.header__contenedor-logo{
+	width: 20%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.header__enlace{
+	width: 100%;
+}
+
+.header__logo{
+	width: 50px;
+}
+
+.header__contenedor-menu{
+	width: 80%;
+	padding: 0 1em;
+}
+
+.header__contenedor-buscar{
+	width: 20%;
+}
+
+.header__contenedor-menu{
+	width: 100%;
+}
+
+.header__menu{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+}
+
+.header__menu-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 5;
+	padding: 0 1em;
+	width: 100%;
+}
+
+.header__menu-enlace{
+	color: rgba(40,45,49,.7);
+	width: 100%;
+	transition: all 0.3s;
+}
+
+.header__menu-enlace:hover{
+	color: #BA68C8;
+}
+
+.header__contenedor-buscar{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 1em;
+}
+
+.header__buscar{
+	border: none;
+	border-radius: .3em;
+	color: rgba(40,45,49,.7);
+	line-height: 2;
+	border: 1px solid #ccc;
+	padding: 0 1em;
+	font-style: italic;
+	background: url("../img/search-icon.png") 100% no-repeat;
+	padding-right: 2em;
+}
+
+
+.header__buscar:focus{
+	border: 1px solid #CE93D8;
+}
+
+.header__buscar:active{
+	border: 1px solid #CE93D8;
+}
+
+.contenedor__banner{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	background: linear-gradient(90deg,#9C27B0,#6A1B9A);
+	clip-path: polygon(0 0,100% 0,100% 100%,0 95%);
+}
+
+.banner{
+	width: 100%;
+	/*background: linear-gradient(90deg,#25c9ff,#2279d7);*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.banner__texto{
+	width: 60%;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fcfcfc;
+	text-align: center;
+}
+
+.banner__titulo{
+
+}
+
+.banner__slogan{
+	margin: 1em 0;
+}
+
+.banner__galeria{
+	width: 40%;
+	padding: 1em;
+}
+
+.banner__imagenes{
+	width: 100%;
+}
+
+.banner__imagen{
+	width: 100%;
+	margin: 1em 0;
+	border: 1px solid #fcfcfc;
+}
