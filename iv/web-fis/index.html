@@ -8,6 +8,8 @@
 
 	<link rel="icon" type="image/png" href="img/logo-small.png">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="ft/styles.css">
+
 </head>
 <body>
     <header class="header">
@@ -22,7 +24,6 @@
 		    		<ul class="header__menu">
 		    			<li class="header__menu-item"><a class="header__menu-enlace f__semi-bold f__cuerpo" href="#">INICIO</a></li>
 		    			<li class="header__menu-item"><a class="header__menu-enlace f__semi-bold f__cuerpo" href="#">NOSOTROS</a></li>	
-		    			<li class="header__menu-item"><a class="header__menu-enlace f__semi-bold f__cuerpo" href="#">ADMINISION</a></li>	
 		    			<li class="header__menu-item"><a class="header__menu-enlace f__semi-bold f__cuerpo" href="#">NOTICIAS</a></li>	
 <!-- 		    			<li class="header__menu-item"><a class="header__menu-enlace f__semi-bold f__cuerpo" href="#">DIFUSION</a></li> -->	
 		    			<li class="header__menu-item"><a class="header__menu-enlace f__semi-bold f__cuerpo" href="#">CONTACTO</a></li>
@@ -33,6 +34,18 @@
 		    	<div class="header__contenedor-buscar">
 		    		<input class="header__buscar f__cuerpo f__regular" type="text"></input>
 		    	</div>
+
+				<div class="header__contenedor-login">
+					<div class="header__login" id="header__login">
+						<span class="icon-users header__icon-login"></span>
+						<span class="header__intranet f__semi-bold f__cuerpo">INTRANET</span>
+					</div>
+					
+				</div>
+
+				<div class="boton__menu-movil f__titulo">
+					<span class="icon-bars icon-bars-menu" id="icon-bars-menu"></span>
+				</div>
     	</nav>
     </header>
 
@@ -41,20 +54,107 @@
 
 			<div class="banner__texto">
 				<h1 class="banner__titulo f__bold f__titulo">Facultad De Ingeniera De Sistemas</h1>
-				<h2 class="banner__slogan f__regular f__subtitulo">Creatividad e Innovacion</h2>
+				<p class="banner__slogan f__light f__subtitulo">¡Innovación, Creatividad y Tecnología de Punta!</p>
 			</div>
 
 			<div class="banner__galeria">
 				<div class="banner__imagenes">
 					<img src="img/foto-a.jpg" alt="" class="banner__imagen">
+					
 				</div>
 			</div>
 
 		</div>
 	</div>
 
-    <main class="main"></main>
+    <main class="main">
+		<div class="main__contenedor">
+			
+			<div class="main__contenido">
 
-    <footer class="footer"></footer>
+					<div class="main__articulo">
+						<h1 class="main__titulo f__bold f__titulo">Bienvenido</h1>
+
+						<p class="main__cuerpo f__regular f__subtitulo">
+						De acuerdo con la tendencia internacional, la FIS de la UNICA emplea metodologías especializadas en el
+						desarrollo de los conocimientos adquiridos por el estudiante, con el fin de potenciar su capacidad de innovación y prepararlo en 
+						la gestión y dirección de proyectos corporativos o propios.​​​
+						</p>
+
+						<p class="main__cuerpo f__regular f__subtitulo">
+						Los Estudiantes de Ingeniería de Sistemas se preparan para mejorar los procesos de negocios de las empresas,	
+						generar software de calidad, automatizar compañías y aplicar las nuevas tendencias técnologicas.
+						</p>
+
+						<p class="main__cuerpo f__regular f__subtitulo">
+						¡Innovación, Creatividad y Tecnología de Punta!
+						</p>
+					</div>
+			</div>
+		</div>
+	</main>
+
+    <footer class="footer">
+		<div class="footer__contenedor">
+			<div class="footer__columna"><img src="img/unica.png" alt="" class="footer__logo"></div>
+			<div class="footer__columna">
+				<div class="footer__columna__direccion">
+				<!--<p class="footer__direccion">-->
+					<h2 class="footer__titulo f__regular f__subtitulo">Rectorado</h2>
+					<p class="footer__direccion f__regular f__cuerpo"><span class="icon-map-marker"></span> Ayabaca C-9 Urb. San José - Ica.</p>
+					<h2 class="footer__titulo f__regular f__subtitulo">Ciudad Universitaria</h2>
+					<p class="footer__direccion f__regular f__cuerpo"><span class="icon-map-marker"></span> Av. Los Maestros S/N - Ica.</p>
+					<h2 class="footer__titulo f__regular f__subtitulo">Local Central</h2>
+					<p class="footer__direccion f__regular f__cuerpo"><span class="icon-map-marker"></span> Calle Bolívar 232 - Ica.</p>
+				</div>
+			</div>
+			<div class="footer__columna">
+				<div class="footer__copyright">
+				<h2 class="footer__titulo f__regular f__subtitulo">Contacto</h2>
+				<p class="footer__direccion f__regular f__cuerpo"><span class="icon-envelope"> </span> &nbsp; contacto@sistemasunica.edu</p>
+				<p class="footer__cuerpo f__regular f__cuerpo">© 2017 Facultad de Ingeniería de Sistemas</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+<div class="login__intranet" id="login__intranet">
+	<div class="contenedor__login">
+		<form action="" class="form__login">
+			<h2 class="form__login-titulo f__enunciado f__semi-bold">Ingresar a La Plataforma</h2>
+			<span class="form__login-fila">
+				<span class="form__login-f icon-user"></span>
+				<input type="text" class="form__login-input" placeholder="Usuario">
+			</span>
+			<span class="form__login-fila">
+				<span class="form__login-f icon-lock"></span>
+				<input type="password" class="form__login-input" placeholder="Contraseña">
+			</span>
+			<span class="form__login__olvidaste-m"><a class="form__login__olvidaste f__subtitulo">Olvidaste Tu Contraseña</a></span>
+
+			<a  class="form__login-boton f__subtitulo f__regular">Iniciar Sesion</a>
+
+			<span class="form__login-icon icon-user f__titulo f__bold"></span>
+
+			<span class="form__login-cerrar"><span class="form__login-x icon-times f__subtitulo f__regular" id="form__login-x"></span></span>
+		</form>
+
+	</div>
+</div>
+
+
+<div class="menu__movil" id="menu__movil">
+	<ul class="header__menu__movil">
+		    			<li class="header__menu__movil-item"><span class="icon-menu-movil icon-home f__semi-bold f__subtitulo"></span><a class="header__menu__movil-enlace f__semi-bold f__cuerpo" href="#">INICIO</a></li>
+		    			<li class="header__menu__movil-item"><span class="icon-menu-movil icon-university f__semi-bold f__subtitulo"></span><a class="header__menu__movil-enlace f__semi-bold f__cuerpo" href="#">NOSOTROS</a></li>	
+		    			<li class="header__menu__movil-item"><span class="icon-menu-movil icon-newspaper-o f__semi-bold f__subtitulo"></span><a class="header__menu__movil-enlace f__semi-bold f__cuerpo" href="#">NOTICIAS</a></li>		
+		    			<li class="header__menu__movil-item"><span class="icon-menu-movil icon-envelope f__semi-bold f__subtitulo"></span><a class="header__menu__movil-enlace f__semi-bold f__cuerpo" href="#">CONTACTO</a></li>
+		    			<li class="header__menu__movil-item"><span class="icon-menu-movil icon-graduation-cap f__semi-bold f__subtitulo"></span><a class="header__menu__movil-enlace f__semi-bold f__cuerpo" href="#">COMUNIDADES</a></li>		
+	</ul>
+
+	<span class="form__menu-movil-cerrar"><span class="form__login-x-2 icon-times f__subtitulo f__iconos" id="form__login-x-2"></span></span>
+</div>
+
+<script src="js/procesos.js"></script>
 </body>
 </html>
