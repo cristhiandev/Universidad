@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded",()=>{
     document.getElementById("form__login-x-2").addEventListener("click",()=>{
     	document.getElementById("menu__movil").setAttribute("style","right:-100%;");
     });
+
+    document.getElementById("intranet-movil").addEventListener("click",()=>{
+        document.getElementById("login__intranet").setAttribute("style","display:block;");
+    });
     
 
 });

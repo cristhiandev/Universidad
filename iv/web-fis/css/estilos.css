@@ -120,7 +120,7 @@ body{
 }
 
 .header__enlace{
-	width: 100%;
+	
 }
 
 .header__logo{
@@ -399,7 +399,7 @@ body{
 	position:fixed;
 	top: 0;
 	right: 0;
-	z-index: 1100;
+	z-index: 1400;
 	display: none;
 }
 
@@ -587,6 +587,7 @@ body{
 	flex-direction: row;
 	align-items: center;
 	padding: 0.2em 1em;
+	transition: all 0.3s;
 }
 
 .header__menu__movil-item:hover{
@@ -598,7 +599,8 @@ body{
 	margin-left: 1em;
 	color: #6F7372;
 	width: 100%;
-	max-width: 336px;
+	cursor: pointer;
+	/*max-width: 336px;*/
 }
 
 .icon-menu-movil{
@@ -610,13 +612,23 @@ body{
 	
 }
 
-.header__menu__movil li:first-of-type{
+.header__menu__movil li:first-of-type,.header__menu__movil li:last-of-type{
 	background-color: #39464F;
 	padding-right: 3em;
 }
 
-.header__menu__movil li:first-of-type .header__menu__movil-enlace{
+.header__menu__movil li:first-of-type:hover,.header__menu__movil li:last-of-type:hover{
+	background-color: #673AB7;
+}
+
+.header__menu__movil li:first-of-type .header__menu__movil-enlace,
+.header__menu__movil li:last-of-type .header__menu__movil-enlace{
 	color: #fff;
+
+}
+
+.icon-intranet-movil{
+
 }
 
 
@@ -670,7 +682,11 @@ body{
 		margin-top: 3.5em;
 	}
 
-
+	.header__enlace{
+		display: flex;
+		align-items: center;
+		padding: 0.2em 0;
+	}
 
 }
 
