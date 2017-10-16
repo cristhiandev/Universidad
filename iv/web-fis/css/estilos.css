@@ -98,6 +98,12 @@ body{
 	position: relative;
 }
 
+.main__principal{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
 
 .header{
 	width: 100%;
@@ -110,7 +116,6 @@ body{
 	top: 0;
 	z-index: 1000;
 	padding: 0 0.5em;
-	overflow: hidden;
 }
 
 .header__contenedor-logo{
