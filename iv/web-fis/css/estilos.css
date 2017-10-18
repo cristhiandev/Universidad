@@ -147,10 +147,7 @@ body{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-<<<<<<< HEAD
 	position: relative;
-=======
->>>>>>> 0b056d5d0488310536aa63f5527cec10c8487ab8
 }
 
 .header__contenedor-menu{
@@ -234,7 +231,6 @@ body{
 	background-color: #00BCD4;
 }
 
-<<<<<<< HEAD
 .header__login__close{
 	width: 100%;
 	display: flex;
@@ -265,11 +261,6 @@ body{
 /*#header__login:checked{
 	color: red;
 }*/
-=======
-#header__login:checked{
-	color: red;
-}
->>>>>>> 0b056d5d0488310536aa63f5527cec10c8487ab8
 
 	/*#btn-menu:checked ~ .menu{
 		margin:0;
@@ -508,10 +499,7 @@ body{
     border-color: rgb(221, 221, 221);
 	border-left: none;
 	font-size: 1em;
-<<<<<<< HEAD
 	text-transform: lowercase;
-=======
->>>>>>> 0b056d5d0488310536aa63f5527cec10c8487ab8
 }
 
 .form__login-boton{
@@ -570,7 +558,6 @@ body{
 	color: rgb(226, 63, 54);
 }
 
-<<<<<<< HEAD
 .mensaje__login{
 	width: 100%;
 	line-height: 2;
@@ -579,8 +566,6 @@ body{
 	text-align: center;
 	transition: all 0.3s;
 }
-=======
->>>>>>> 0b056d5d0488310536aa63f5527cec10c8487ab8
 
 .form__login__olvidaste-m{
 	width: 100%;
@@ -624,11 +609,7 @@ body{
 	width: 100%;
 	background-color: #F8F8F8;
 	top: 0;
-<<<<<<< HEAD
 	z-index: 1400;
-=======
-	z-index: 1200;
->>>>>>> 0b056d5d0488310536aa63f5527cec10c8487ab8
 	right: -100%;
 	transition: all 0.3s;
 }
@@ -715,7 +696,6 @@ body{
 	color: #FF5252;
 }
 
-<<<<<<< HEAD
 .alerta{
     width: 100%;
     height: 100%;
@@ -899,8 +879,6 @@ body{
 
 
 
-=======
->>>>>>> 0b056d5d0488310536aa63f5527cec10c8487ab8
 
 
 
@@ -939,13 +917,10 @@ body{
 		padding: 0.2em 0;
 	}
 
-<<<<<<< HEAD
 	.sesion{
 		display: none;
 	}
 
-=======
->>>>>>> 0b056d5d0488310536aa63f5527cec10c8487ab8
 }
 
 @media (min-width:1023px){

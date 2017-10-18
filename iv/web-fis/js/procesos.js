@@ -1,7 +1,6 @@
 
 
 
-<<<<<<< HEAD
 
 document.addEventListener("DOMContentLoaded",()=>{
 
@@ -122,13 +121,6 @@ boton__login.addEventListener("click",()=>{
         
     }
 
-=======
-document.addEventListener("DOMContentLoaded",()=>{
-
-    document.getElementById("header__login").addEventListener("click",()=>{
-        document.getElementById("login__intranet").setAttribute("style","display:block;");
-    });
->>>>>>> 0b056d5d0488310536aa63f5527cec10c8487ab8
 
     document.getElementById("form__login-x").addEventListener("click",()=>{
         document.getElementById("login__intranet").setAttribute("style","display:none;");
@@ -145,7 +137,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     document.getElementById("intranet-movil").addEventListener("click",()=>{
         document.getElementById("login__intranet").setAttribute("style","display:block;");
     });
-<<<<<<< HEAD
 
     document.getElementById("header__login__close").addEventListener("click",()=>{
         document.getElementById("sesion").classList.toggle("ocultar");
@@ -164,8 +155,5 @@ document.addEventListener("DOMContentLoaded",()=>{
         localStorage.removeItem("imagen");
         location.reload()
     });
-=======
-    
->>>>>>> 0b056d5d0488310536aa63f5527cec10c8487ab8
 
 });
