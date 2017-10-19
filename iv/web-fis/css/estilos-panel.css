@@ -1,0 +1,408 @@
+/*@font-face {
+  font-family: "Open Sans";
+  src: url("../ft/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../ft/OpenSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../ft/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../ft/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../ft/OpenSans-Regular.ttf");
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+*,html,body,::before,::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+input{
+	box-shadow: none;
+	outline: 0;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	background-color: #fafafa;
+}
+
+.f__light{
+	font-weight: 300;
+}
+
+.f__regular{
+	font-weight: 400;
+}
+
+.f__semi-bold{
+	font-weight: 600;
+}
+
+.f__bold{
+	font-weight: 700;
+}
+
+.f__extra-bold{
+	font-weight: 800;
+}
+
+.f__titulo{
+	font-size: 2em;
+}
+
+.f__subtitulo{
+	font-size: 1em;
+}
+
+.f__nombres{
+    font-size: 15px;
+}
+
+.f__enunciado{
+	font-size: 22px;
+}
+
+.f__cuerpo{
+	font-size: 13px;
+}
+
+.f__iconos{
+	font-size: 20px;
+}
+
+
+.contenedor__panel{
+    width: 100%;
+    color: #FFFFFF;
+    height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu{
+    min-width: 200px;
+    background-color: #191F28;
+    height: 100%;
+    padding: 2em 0;
+}
+
+
+
+.menu__titulo{
+    display: block;
+    color: #EC6E92;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.avatar{
+    margin: 2em 0;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.avatar__imagen{
+    max-width: 100%;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 1em auto;
+}
+
+.avatar__nombre{
+    text-align: center;
+}
+
+.avatar__categoria{
+    text-align: center;
+    color: #7F8390;
+}
+
+.avatar__menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar__menu__item{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 0.3s;
+    padding: 0 1em;
+}
+
+.avatar__menu__item:hover{
+    background-color: #ECEDEE;
+    color: #191F28;
+}
+
+/*.avatar__menu .avatar__menu__item:last-child{
+    align-self: flex-end;
+}*/
+
+
+.avatar__enlace{
+    color: #707379;
+    margin-left: 1em;
+    line-height: 4;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.icono__menu{
+    color:#707379;
+    height: 100%;
+}
+
+.tablero{
+    width: 100%;
+    height: 100%;
+    background-color: #ECEFF1;
+    padding: 1em;
+    padding-top: 2em;
+}
+
+.main__cursos{
+    width: 100%;
+}
+
+.ocultar{
+    display: none;
+}
+
+.contenido__titulo{
+    color: #A4A4A5;
+    margin-bottom: 1em;
+}
+
+.contenido__cursos{
+    color: #8F8F8F;
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+
+    /*justify-content: space-between*/
+}
+
+.contenido__cursos .curso:nth-last-child(2n){
+    margin-right: 0;
+}
+
+.curso{
+    background-color: #FFFFFF;
+    /*padding: 1em;*/
+    border-radius: 3px;
+    margin-right: 1em;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s;
+
+}
+
+.curso:hover{
+    opacity: 1;
+}
+
+.icono__curso{
+    margin-right: 0.5em;
+    
+}
+
+.curso__titulo{
+    background-color: #263238;
+    padding: 1em;
+}
+
+.curso__descripcion{
+    padding: 1em;
+}
+
+.main__perfil{
+    width: 100%;
+    display: block;
+}
+
+.perfil__titulo{
+    color: #8F8F8F;
+    margin-bottom: 1em;
+}
+
+.perfil__dato{
+    width: 100%;
+    text-align: left;
+    display: block;
+    background-color: #FFFFFF;
+    margin-top: 1em;
+    color: #263238;
+    padding: 1em;
+    border-bottom: 3px solid #455A64;
+    border-radius: 3px;
+}
+
+.horarios{
+    width: 100%;
+}
+
+.horarios__titulo{
+    color: #8F8F8F;
+    margin-bottom: 0.5em;
+}
+
+.horarios__texto{
+    color: #8F8F8F; 
+    margin-bottom: 0.3em;
+}
+
+.horarios__filtro{
+    margin-top: 1em;
+    background-color: #009688;
+    padding: 1em;
+    border-radius: 3px;
+}
+
+.horarios__filtro .horarios__label:last-of-type{
+    margin-left: 1em;
+}
+
+.horarios__ciclo,.horarios__aula{
+    padding: 0.5em 1em;
+    background-color: #263238;
+    color: #FFFFFF;
+}
+
+.horarios__filtrar{
+    margin-left: 1em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    background-color: #263238;
+    transition: all 0.3s;
+    border-radius: 3px;
+}
+
+.horarios__filtrar:hover{
+    background-color: #fff;
+    color: #263238;
+}
+
+.resultados{
+    color: #8F8F8F; 
+    margin: 1em 0;
+}
+
+.notificaciones__titulo{
+    color: #8F8F8F; 
+}
+
+.notificaciones__estados{
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #263238;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1em;
+    margin: 1em 0;
+    box-shadow: 0 0 20px 1px #8F8F8F;
+}
+
+.notificacion__color{
+    width: 50px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 1em;
+    color: #FFFFFF;
+    border-radius: 3px;
+}
+
+.importante{
+    background-color: #DC4B3D;
+}
+
+.no-leido{
+    background-color: #2BC76C;
+}
+
+.leido{
+    background-color: #3393D5;
+}
+
+.notificaciones__numero{
+    color:  #8F8F8F; 
+    margin-bottom: 1em;
+}
+
+.notificacion{
+    width: 100%;
+    box-shadow: 0 0 20px 1px #8F8F8F;
+    opacity: 0.7;
+}
+
+.notificacion:hover{
+    opacity: 1;
+}
+
+.notificacion__item{
+    padding: 1em;
+}
+
+.notificacion__cuerpo{
+    color: #263238;
+    text-align: justify;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.notificacion__cabeza{
+       border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.notificacion__aceptar__c{
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+.notificacion__aceptar{
+  color:#FFFFFF;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.notificacion__aceptar:hover{
+    background-color: #FF8A80;
+}

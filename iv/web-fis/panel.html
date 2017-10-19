@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Panel de Control</title>
+	<link rel="icon" type="image/png" href="img/logo-small.png">
+    <link rel="stylesheet" type="text/css" href="css/estilos-panel.css">
+	<link rel="stylesheet" href="ft/styles.css">
+</head>
+<body>
+    
+    <main class="contenedor__panel">
+        <section class="menu">
+            <div class="menu__titulo f__bold f__subtitulo">
+                Panel De Control
+            </div>
+
+            <div class="avatar">
+                <img src="img_user/user1.png" alt="" class="avatar__imagen">
+                <h2 class="avatar__nombre f__regular f__nombres">Juan Perez</h2>
+                <p class="avatar__categoria f__regular f__cuerpo">Docente</p>
+            </div>
+
+            <div class="menu__menu">
+                <ul class="avatar__menu">
+                    <li class="avatar__menu__item"><span class="icono__menu icon-home"></span><a href="index.html" class="avatar__enlace f__regular f__cuerpo">Inicio</a></li>
+                    <li class="avatar__menu__item"><span class="icono__menu icon-user"></span><a class="avatar__enlace f__regular f__cuerpo" id="boton__perfil">Perfil</a></li>
+                    <li class="avatar__menu__item"><span class="icono__menu icon-book-2"></span><a class="avatar__enlace f__regular f__cuerpo" id="boton__cursos">Cursos</a></li>
+                    <li class="avatar__menu__item"><span class="icono__menu icon-clock-o"></span><a class="avatar__enlace f__regular f__cuerpo" id="boton__horarios">Horarios</a></li>
+                    <li class="avatar__menu__item"><span class="icono__menu icon-bell"></span><a class="avatar__enlace f__regular f__cuerpo" id="boton__notificaciones">Notificaciones</a></li>
+                    <li class="avatar__menu__item"><span class="icono__menu icon-sign-out"></span><a class="avatar__enlace f__regular f__cuerpo" id="cerrar__panel">Salir</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="tablero">
+                <div class="main__cursos ocultar" id="main__cursos">
+                    <h2 class="contenido__titulo f__regular f__enunciado">Cursos Dictados</h2>
+                    <div class="contenido__cursos">
+                        <div class="curso">
+                            <span class="curso__titulo"><span class="icono__curso icon-book-2"></span>Matematicas</span>
+                            <span class="curso__descripcion f__cuerpo f__regular">Curso de numeros</span>
+                        </div>
+                        <div class="curso">
+                            <span class="curso__titulo"><span class="icono__curso icon-book-2"></span>Lenguaje de Programacion</span>
+                            <span class="curso__descripcion f__cuerpo f__regular">Curso de numeros</span>
+                        </div>
+                        <div class="curso">
+                            <span class="curso__titulo"><span class="icono__curso icon-book-2"></span>Programacion Orientada a Objetos</span>
+                            <span class="curso__descripcion f__cuerpo f__regular">Curso de numeros</span>
+                        </div>
+                        <div class="curso">
+                            <span class="curso__titulo"><span class="icono__curso icon-book-2"></span>Derecho y Defensa</span>
+                            <span class="curso__descripcion f__cuerpo f__regular">Curso de numeros</span>        
+                        </div>
+                        <div class="curso">
+                            <span class="curso__titulo"><span class="icono__curso icon-book-2"></span>Economia</span>
+                            <span class="curso__descripcion f__cuerpo f__regular">Curso de numeros</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="main__perfil ocultar" id="main__perfil"> 
+                    <h2 class="perfil__titulo">Datos Personales</h2>
+                    <span class="perfil__dato f__cuerpo"><span class="perfil__dato__b f__bold f__cuerpo">Nombres:</span> Juez </span>
+                    <span class="perfil__dato f__cuerpo"><span class="perfil__dato__b f__bold f__cuerpo">Apellidos:</span> Perez Perez</span>
+                    <span class="perfil__dato f__cuerpo"><span class="perfil__dato__b f__bold f__cuerpo">Categoria:</span> Docente</span>
+                    <span class="perfil__dato f__cuerpo"><span class="perfil__dato__b f__bold f__cuerpo">Direccion:</span> Av San Martin Nº12 Ica</span>
+                    <span class="perfil__dato f__cuerpo"><span class="perfil__dato__b f__bold f__cuerpo">Telefono:</span> 994 484 847</span>
+                </div>
+
+
+                <div class="horarios ocultar" id="horarios">
+                    <div class="horarios__titulo f__titulo f__regular">Horarios Academicos</div>
+                    <span class="horarios__texto f__subtitulo f__regular">Elección de Filtros</span>
+                    <div class="horarios__filtro">
+                        <label for="horarios__ciclo" class="horarios__label f__cuerpo f__regular">Ciclo:</label>
+                        <select class="horarios__ciclo f__cuerpo f__regular" name="horarios__ciclo">
+                            <option value="Todos">Todos</option>
+                            <option value="I">I</option>
+                            <option value="II">II</option>
+                            <option value="III">III</option>
+                            <option value="IV">IV</option>
+                            <option value="V">V</option>
+                            <option value="VI">VI</option>
+                            <option value="VII">VII</option>
+                            <option value="VIII">VIII</option>
+                            <option value="IX">IX</option>
+                            <option value="X">X</option>
+                        </select>
+                        <label for="horarios__aula" class="horarios__label f__cuerpo f__regular">Sección:</label>
+                        <select class="horarios__aula f__cuerpo f__regular">
+                            <option value="Todos">Todos</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                        </select>
+                        <a class="horarios__filtrar">Filtrar</a>
+                    </div>
+
+                    <div class="horarios__resultados">
+                        <h2 class="resultados f__subtitulo f__regular">Resultados</h2>
+                    </div>
+
+                </div>
+
+                <div class="notificaciones ocultar" id="notificaciones">
+                    <div class="notificaciones__titulo f__titulo f__regular">Notificaciones</div>
+                    <div class="notificaciones__estados">
+                        <span class="notificacion__estado f__regular f__cuerpo">Importantes</span>
+                        <span class="notificacion__color importante"></span>
+                        <span class="notificacion__estado f__regular f__cuerpo">No Leidos</span>
+                        <span class="notificacion__color no-leido"></span>
+                        <span class="notificacion__estado f__regular f__cuerpo">Leidos</span>
+                        <span class="notificacion__color leido"></span>
+                    </div>
+
+                    <h2 class="notificaciones__numero f__regular f__cuerpó">Usted Tiene 1 Notificacion No Leida</h2>
+
+                    <div class="notificacion">
+                        <div class="notificacion__item notificacion__cabeza importante f__semi-bold f__cuerpo">
+                            <span class="icon-exclamation"></span>
+                            <span class="notificacion__cabeza__texto">Faltan Pasar Notas</span>
+                        </div>
+                        <div class="notificacion__item notificacion__cuerpo f__subtitulo f__cuerpo">
+                            <p class="notificacion__cuerpo__texto">Mediante esta notificacion se le comunica
+                                que aun no han pasado sus notas.
+                            </p>
+                            <span class="notificacion__aceptar__c"><a class="notificacion__aceptar importante">Aceptar</a></span>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+    </main>
+
+<script src="js/procesos_panel.js">
+</script>
+</body>
+</html>
